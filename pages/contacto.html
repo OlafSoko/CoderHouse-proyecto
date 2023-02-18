@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Josefin+Sans:ital,wght@1,200&family=Noto+Sans:ital,wght@1,200&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootsttrap.min.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <title>
+        Contacto
+    </title>    
+</head>
+
+<body>
+    <header class="wrapper">
+        <nav>
+            <a href="#" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./quienes_somos.html">Quienes Somos?</a></li>
+                    <li><a href="./pedidos_a_medida.html">Pedidos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./catalogo.html">Catalogo</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1 class="center">CONTACTANOS</h1>
+    <p class="center">
+        Te dejamos un formulario para que nos dejes tus datos y nos contactaremos a la brevedad
+    </p>
+
+    <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
+        <div class="form-group">
+            <label>Nombre:</label> 
+            <input type="text" name="nombre" id="nombre" required> 
+        </div>
+        <div class="form-group">    
+            <label>Apellido:</label> 
+            <input type="text" name="apellido" id="apellido" required> 
+        </div>
+        <div class="form-group">    
+            <label>Telefono:</label> 
+            <input type="number" name="telefono" id="telefono" required> 
+        </div>
+        <div class="form-group">   
+            <label>Dejanos tu consulta:</label> 
+            <input type="text" name="consulta" id="consulta"> 
+        </div>
+        <div class="form-group">    
+            <label>Como preferis que te contactemos?</label>
+            <select>
+                <option value="1">Whatsapp</option>
+                <option value="2">Llamada</option>
+            </select>
+        </div>     
+        <button>Enviar</button>
+    </form> 
+    
+    <footer>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.png" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/olafsoko/">
+                    <img src="../images/instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/whatsapp.png" alt="Whatsapp">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
