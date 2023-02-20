@@ -4,7 +4,7 @@
 /* clases */
 .wrapper {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .galeria {
@@ -28,16 +28,17 @@
     text-align: right;
 }
 
-
 /* por partes*/
-
+body {
+    background-color: beige;
+}
 /*nav*/
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: beige ;
+    background-color: rgb(161, 161, 119) ;
     padding:1rem 1.5rem;
 }
 nav .logo {
@@ -80,8 +81,16 @@ nav #toggle,nav label {
     nav #toggle:checked .menu {
         height: 100%;
     }
-}
+    .mitad {
+        width: 60%;
+    }
 
+}
+@media (min-width: 480px) {
+    .mitad {
+        width: 50%;
+    }
+}
 
 
 /*otros*/
@@ -109,6 +118,7 @@ section {
 
 
 
+
 /* form */
 form {
     background-color: beige;
@@ -120,7 +130,6 @@ form div{
     color: black;
     gap: 1rem;
     padding: 01.5rem;
-    border-radius: 1rem;
     margin: 2%;
 }
 form button {
@@ -131,6 +140,9 @@ form button {
     color: white;
 }
 
+.fondo-blanco {
+    background-color: white;
+}
 
 /*footer */
 footer {
