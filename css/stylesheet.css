@@ -7,14 +7,7 @@
     max-width: 1440px;
     margin: 0 auto;
 }
-.galeria {
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    justify-content: flex-start;
-    gap: 1rem;
-}
+
 .center {
     text-align: center;
 }
@@ -115,7 +108,14 @@ section {
 }
 
 
-
+.galeria {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+    gap: 1rem;
+}
 
 
 
