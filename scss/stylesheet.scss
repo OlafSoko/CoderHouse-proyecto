@@ -1,0 +1,210 @@
+*{
+    font-family: 'Black Han Sans', sans-serif;
+}
+/* clases */
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+.bordes {
+    border: 2px solid black;
+    border-radius: 0.4rem;
+}
+.flexible {
+    display: flex;
+}
+.derecha {
+    display: block;
+    text-align: right;
+}
+.fondo-blanco {
+    background-color: white;
+}
+.galeria {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+/* por partes*/
+body {
+    background-color: beige;
+}
+/*nav*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(red, yellow);
+    padding:1rem 1.5rem;
+    .logo {
+        font-weight: 700;
+    }
+    a img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 00.2rem;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+/*otros*/
+
+div {
+    h1{
+        text-decoration: underline black;
+        animation-name: aparece_titulo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+    @keyframes aparece_titulo {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+       
+    }
+    input {
+    display: flex;
+    width: 100px;
+    transition: width 2s, height 2s;
+    }
+    input:hover {
+        width: 300px;
+        height: 150px;
+    }
+    img {
+        width: 100%;
+        height: 60%;
+        border: 2px;
+    }
+}
+
+section {
+    display: flex;
+    background-image: url(../images/alianzas.jpg);
+    background-size: contain;
+
+}
+/* form */
+form {
+    background-color: beige;
+    border-radius: 1rem;
+    padding: 1rem;
+    div{
+        background-color:rgba(156, 123, 123, 0.041);
+        color: black;
+        gap: 1rem;
+        padding: 01.5rem;
+        margin: 2%;
+    }
+    button {
+        margin-top: 00.2rem;
+        padding: 0.2rem;
+        border-radius: 12px ;
+        background-color: black;
+        color: white;
+    }
+}
+
+/*footer */
+footer {
+    background-color: black;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly ;
+        position: relative;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav {
+        .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        }
+        ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5 rem;
+        }
+        label {
+            right: 0;
+            display: flex;
+            color: black;
+            cursor: pointer;
+        }
+        #toggle:checked .menu {
+            height: 100%;
+        }
+    }
+    .mitad {
+        width: 60%;
+    }
+    .tamaño {
+        width: 18rem;
+    }
+    .grid-container {
+        display: grid;  
+        grid-template-columns: 300px 300px;
+    }
+
+}
+@media (max-width: 1030px) {
+    .grid-container {
+        display: grid;  
+        grid-template-columns: 240px 240px 240px 240px;
+    }
+    .galeria {
+        list-style: none;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+}
+@media (min-width: 1030px) {
+    .grid-container {
+        display: grid;  
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+    .galeria {
+        list-style: none;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+}
+
