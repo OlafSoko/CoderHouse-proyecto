@@ -179,8 +179,15 @@ footer ul img {
     display: grid;
     grid-template-columns: 300px 300px;
   }
+  .galeria {
+    list-style: none;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
 }
-@media (max-width: 1030px) {
+@media (min-width: 480px) and (max-width: 1030px) {
   .grid-container {
     display: grid;
     grid-template-columns: 240px 240px 240px 240px;
