@@ -40,12 +40,10 @@
   gap: 1rem;
 }
 
-/* por partes*/
 body {
   background-color: beige;
 }
 
-/*nav*/
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +70,6 @@ nav a {
   color: black;
 }
 
-/*otros*/
 div h1 {
   text-decoration: underline black;
   animation-name: aparece_titulo;
@@ -98,7 +95,7 @@ div input {
   transition: width 2s, height 2s;
 }
 div input:hover {
-  width: 300px;
+  width: 200px;
   height: 150px;
 }
 div img {
@@ -106,14 +103,12 @@ div img {
   height: 60%;
   border: 2px;
 }
-
-section {
+div section {
   display: flex;
   background-image: url(../images/alianzas.jpg);
   background-size: contain;
 }
 
-/* form */
 form {
   background-color: beige;
   border-radius: 1rem;
