@@ -1,0 +1,8 @@
+@mixin galeria_fotos {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+    gap: 1rem;
+}

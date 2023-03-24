@@ -3,7 +3,6 @@
   font-family: "Black Han Sans", sans-serif;
 }
 
-/* clases */
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -129,7 +128,6 @@ form button {
   color: white;
 }
 
-/*footer */
 footer {
   background-color: black;
 }
@@ -165,47 +163,50 @@ footer ul img {
     height: 100%;
   }
   .mitad {
-    width: 60%;
+    width: 40%;
   }
   .tamaño {
     width: 18rem;
+  }
+  .galeria {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+    gap: 1rem;
   }
   .grid-container {
     display: grid;
     grid-template-columns: 300px 300px;
   }
+}
+@media (min-width: 480px) and (max-width: 1030px) {
   .galeria {
     list-style: none;
+    display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
     justify-content: flex-start;
     gap: 1rem;
   }
-}
-@media (min-width: 480px) and (max-width: 1030px) {
   .grid-container {
     display: grid;
     grid-template-columns: 240px 240px 240px 240px;
   }
+}
+@media (min-width: 1030px) {
   .galeria {
     list-style: none;
+    display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
     justify-content: flex-start;
     gap: 1rem;
   }
-}
-@media (min-width: 1030px) {
   .grid-container {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
-  }
-  .galeria {
-    list-style: none;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    justify-content: flex-start;
-    gap: 1rem;
   }
 }
 
