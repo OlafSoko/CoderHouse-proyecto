@@ -7,7 +7,16 @@ $main-color: beige;
     width: 100%;
     margin: 0 auto;
 }
-
+.galeria {
+    @include galeria_fotos
+}
+.grid-container {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.total_ancho {
+    width: 100%;
+}
 .center {
     text-align: center;
 }
@@ -24,9 +33,6 @@ $main-color: beige;
 }
 .fondo-blanco {
     background-color: white;
-}
-.galeria {
-    @include galeria_fotos
 }
 body {
     background-color: $main-color;
